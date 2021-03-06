@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • iris3api</title>
+<title>CreateIRIS3Object — CreateIRIS3Object • iris3api</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,8 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="CreateIRIS3Object — CreateIRIS3Object" />
+<meta property="og:description" content="Create IRIS3 object" />
 
 
 
@@ -58,7 +59,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -111,60 +112,45 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>CreateIRIS3Object</h1>
+    <small class="dont-index">Source: <a href='https://github.com/Wang-Cankun/iris3api/blob/master/R/object.R'><code>R/object.R</code></a></small>
+    <div class="hidden name"><code>CreateIRIS3Object.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>Create IRIS3 object</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>CreateIRIS3Object</span><span class='op'>(</span>x <span class='op'>=</span> <span class='va'>seurat_object</span>, upload_info <span class='op'>=</span> <span class='fu'>new</span><span class='op'>(</span>Class <span class='op'>=</span> <span class='st'>"UploadInfo"</span><span class='op'>)</span><span class='op'>)</span></pre>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      
-      
-    </tbody><tbody>
-      
-      
-      <tr>
-        
-        <td>
-          <p><code><a href="CreateIRIS3Object.html">CreateIRIS3Object()</a></code> </p>
-        </td>
-        <td><p>CreateIRIS3Object</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="IRIS3-class.html">IRIS3-class</a></code> </p>
-        </td>
-        <td><p>IRIS3</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="UploadInfo-class.html">UploadInfo-class</a></code> </p>
-        </td>
-        <td><p>Create UploadInfo object</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="hello_name.html">hello_name()</a></code> </p>
-        </td>
-        <td><p>Hello world function</p></td>
-      </tr>
-    </tbody>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>x</th>
+      <td><p>Seurat, a seurat object</p></td>
+    </tr>
+    <tr>
+      <th>upload_info</th>
+      <td><p>upload data information</p></td>
+    </tr>
     </table>
-  </div>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>it should return a IRIS3 S4 object.</p>
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>CreateIRIS3Object</p>
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span><span class='op'>(</span><span class='st'>"yan_2013"</span><span class='op'>)</span>
+<span class='va'>seurat_obj</span> <span class='op'>&lt;-</span> <span class='fu'>Seurat</span><span class='fu'>::</span><span class='fu'><a href='https://satijalab.org/seurat/reference/CreateSeuratObject.html'>CreateSeuratObject</a></span><span class='op'>(</span><span class='va'>yan_2013</span><span class='op'>$</span><span class='va'>expr</span><span class='op'>)</span>
+<span class='va'>object</span> <span class='op'>&lt;-</span> <span class='fu'>CreateIRIS3Object</span><span class='op'>(</span><span class='va'>seurat_obj</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; <span class='message'>Creating IRIS3 object. </span></div></pre>
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
