@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Start IRIS3 R api server — start_server • iris3api</title>
+<title>Set a default value if an object is NOT null — set_if_not_null • iris3api</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Start IRIS3 R api server — start_server" />
-<meta property="og:description" content="Start IRIS3 R api server" />
+<meta property="og:title" content="Set a default value if an object is NOT null — set_if_not_null" />
+<meta property="og:description" content="Set a default value if an object is NOT null" />
 
 
 
@@ -114,37 +114,40 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Start IRIS3 R api server</h1>
-    <small class="dont-index">Source: <a href='https://github.com/Wang-Cankun/iris3api/blob/master/R/app_entry.R'><code>R/app_entry.R</code></a></small>
-    <div class="hidden name"><code>start_server.Rd</code></div>
+    <h1>Set a default value if an object is NOT null</h1>
+    <small class="dont-index">Source: <a href='https://github.com/Wang-Cankun/iris3api/blob/master/R/util.R'><code>R/util.R</code></a></small>
+    <div class="hidden name"><code>set_if_not_null.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Start IRIS3 R api server</p>
+    <p>Set a default value if an object is NOT null</p>
     </div>
 
-    <pre class="usage"><span class='fu'>start_server</span><span class='op'>(</span>port <span class='op'>=</span> <span class='fl'>8000</span>, host <span class='op'>=</span> <span class='st'>"127.0.0.1"</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>set_if_not_null</span><span class='op'>(</span><span class='va'>lhs</span>, <span class='va'>rhs</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>port</th>
-      <td><p>default: 8000</p></td>
+      <th>lhs</th>
+      <td><p>An object to set if it's NOT null</p></td>
     </tr>
     <tr>
-      <th>host</th>
-      <td><p>default: "127.0.0.1"
-is used.</p></td>
+      <th>rhs</th>
+      <td><p>The value to provide if x is NOT null</p></td>
     </tr>
     </table>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span>
-<span class='fu'>start_server</span><span class='op'>(</span>port <span class='op'>=</span> <span class='fl'>8000</span><span class='op'>)</span>
-<span class='op'>}</span>
-</div></pre>
+    <p>lhs if lhs is null, else rhs</p>
+    <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
+
+    <p>https://adv-r.hadley.nz/functions.html#missing-arguments</p>
+    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
+
+    <p>Hadley Wickham</p>
+
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

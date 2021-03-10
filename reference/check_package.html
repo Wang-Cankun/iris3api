@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Start IRIS3 R api server — start_server • iris3api</title>
+<title>Check to ensure a package is installed — check_package • iris3api</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Start IRIS3 R api server — start_server" />
-<meta property="og:description" content="Start IRIS3 R api server" />
+<meta property="og:title" content="Check to ensure a package is installed — check_package" />
+<meta property="og:description" content="Check to ensure a package is installed" />
 
 
 
@@ -114,37 +114,43 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Start IRIS3 R api server</h1>
-    <small class="dont-index">Source: <a href='https://github.com/Wang-Cankun/iris3api/blob/master/R/app_entry.R'><code>R/app_entry.R</code></a></small>
-    <div class="hidden name"><code>start_server.Rd</code></div>
+    <h1>Check to ensure a package is installed</h1>
+    <small class="dont-index">Source: <a href='https://github.com/Wang-Cankun/iris3api/blob/master/R/util.R'><code>R/util.R</code></a></small>
+    <div class="hidden name"><code>check_package.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Start IRIS3 R api server</p>
+    <p>Check to ensure a package is installed</p>
     </div>
 
-    <pre class="usage"><span class='fu'>start_server</span><span class='op'>(</span>port <span class='op'>=</span> <span class='fl'>8000</span>, host <span class='op'>=</span> <span class='st'>"127.0.0.1"</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>check_package</span><span class='op'>(</span><span class='va'>package</span>, <span class='va'>repository</span>, <span class='va'>...</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>port</th>
-      <td><p>default: 8000</p></td>
+      <th>package</th>
+      <td><p>Name of pacakge to check</p></td>
     </tr>
     <tr>
-      <th>host</th>
-      <td><p>default: "127.0.0.1"
-is used.</p></td>
+      <th>repository</th>
+      <td><p>Repository that package is available on;
+choose from 'bioconductor', 'github', or 'cran'</p></td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td><p>Extra parameters passed to BiocManager::install,
+remotes::install_github, or install.packages, depending on <code>repository</code></p></td>
     </tr>
     </table>
 
+    <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span>
-<span class='fu'>start_server</span><span class='op'>(</span>port <span class='op'>=</span> <span class='fl'>8000</span><span class='op'>)</span>
-<span class='op'>}</span>
-</div></pre>
+    <p>https://github.com/satijalab/seurat-wrappers/wiki/Code-Guidelines</p>
+    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
+
+    <p>Paul Hoffman</p>
+
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
