@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Load data to Seurat — load_seurat • iris3api</title>
+<title>Return active cell idents labels — active_label • iris3api</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Load data to Seurat — load_seurat" />
-<meta property="og:description" content="Load data to Seurat" />
+<meta property="og:title" content="Return active cell idents labels — active_label" />
+<meta property="og:description" content="Return active cell idents labels" />
 
 
 
@@ -114,61 +114,23 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Load data to Seurat</h1>
-    <small class="dont-index">Source: <a href='https://github.com/Wang-Cankun/iris3api/blob/master/R/load_service.R'><code>R/load_service.R</code></a></small>
-    <div class="hidden name"><code>load_seurat.Rd</code></div>
+    <h1>Return active cell idents labels</h1>
+    <small class="dont-index">Source: <a href='https://github.com/Wang-Cankun/iris3api/blob/master/R/cluster_service.R'><code>R/cluster_service.R</code></a></small>
+    <div class="hidden name"><code>active_label.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Load data to Seurat</p>
+    <p>Return active cell idents labels</p>
     </div>
 
-    <pre class="usage"><span class='fu'>load_seurat</span><span class='op'>(</span>
-  <span class='va'>req</span>,
-  <span class='va'>filename</span>,
-  min_cells <span class='op'>=</span> <span class='fl'>1</span>,
-  min_genes <span class='op'>=</span> <span class='fl'>200</span>,
-  nVariableFeatures <span class='op'>=</span> <span class='fl'>3000</span>,
-  percentMt <span class='op'>=</span> <span class='fl'>5</span>,
-  removeRibosome <span class='op'>=</span> <span class='cn'>FALSE</span>
-<span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>active_label</span><span class='op'>(</span><span class='op'>)</span></pre>
 
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>req</th>
-      <td><p>request payload</p></td>
-    </tr>
-    <tr>
-      <th>filename</th>
-      <td><p>string</p></td>
-    </tr>
-    <tr>
-      <th>min_cells</th>
-      <td><p>number</p></td>
-    </tr>
-    <tr>
-      <th>min_genes</th>
-      <td><p>number</p></td>
-    </tr>
-    <tr>
-      <th>nVariableFeatures</th>
-      <td><p>number</p></td>
-    </tr>
-    <tr>
-      <th>percentMt</th>
-      <td><p>number</p></td>
-    </tr>
-    <tr>
-      <th>removeRibosome</th>
-      <td><p>boolean</p></td>
-    </tr>
-    </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>list of basic QC metrics</p>
+    
+
+
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
