@@ -1,10 +1,10 @@
-#' Create UploadInfo object
+#' Create Example object
 #'
 #' @slot type character
 #' @slot expr_filename character
 #' @slot label_filename character
 setClass(
-  "UploadInfo",
+  "Example",
   slots = c(
     type = "character",
     expr_filename = "character",
@@ -15,8 +15,8 @@ setClass(
 
 setMethod(
   f = "show",
-  signature = "UploadInfo",
+  signature = "Example",
   definition = function(object) {
-    cat(format("Print UploadInfo object"), "\n")
+    cat(format("Print Example object"), "\n")
   }
 )

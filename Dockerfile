@@ -67,7 +67,8 @@ RUN MKDIR /data
 WORKDIR /data
 
 # Expose plumber API port inside docker
-EXPOSE 8000
+# May not needed for pure R package
+# EXPOSE 8000
 
 # Start R API server
 
